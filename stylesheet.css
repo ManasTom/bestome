@@ -434,7 +434,6 @@ h3 {
 .home_products {
     width: 100%;
     height: max-content;
-    background-color: #449E48;
     background-image: url(img/product_bg.png);
     background-size: cover;
     /* Ensures the image covers the entire div */
@@ -443,6 +442,7 @@ h3 {
     background-repeat: no-repeat;
     /* Prevents the image from repeating */
     overflow: hidden;
+    background-color: #449E48;
 }
 
 .home_products h3 {
@@ -459,6 +459,9 @@ h3 {
 .home_product_listing {
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
 }
 
 .product_card {
@@ -501,6 +504,12 @@ h3 {
     text-decoration: line-through;
 }
 
+@media (max-width: 768px) {
+    .home_product_listing {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
 
 
 
@@ -526,21 +535,21 @@ h3 {
     display: none;
 }
 
-.beef_benefits_banner_sm{
-    display: none; 
+.beef_benefits_banner_sm {
+    display: none;
 }
 
-.beef_benefits_text{
+.beef_benefits_text {
     padding: 20px;
 }
 
-.beef_benefits_text h5{
+.beef_benefits_text h5 {
     font-weight: 700;
 }
 
 @media (max-width: 769px) {
-    .beef_benefits_banner_sm{
-        display: block; 
+    .beef_benefits_banner_sm {
+        display: block;
     }
 }
 
@@ -549,7 +558,356 @@ h3 {
         width: 80% !important;
         display: block;
     }
-    .beef_benefits_text{
+
+    .beef_benefits_text {
         display: none;
+    }
+}
+
+
+
+
+
+
+
+.top_selling_products {
+    width: 100%;
+    height: max-content;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, #ffffff, #FFE134);
+}
+
+.top_selling_products h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.top_selling_product_listing {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.top_selling_product_listing_col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top_selling_product_listing_col h6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.top_selling_product_listing_col img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .top_selling_product_listing {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
+
+
+
+
+
+
+.benefits_of_baffallo_meat {
+    width: 100%;
+    height: max-content;
+    background-image: url(img/product_bg.png);
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    overflow: hidden;
+    background-color: #000;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+
+.beef_benefit_cards {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.benefits_of_baffallo_meat_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+
+.benefits_of_baffallo_meat h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.benefits_of_baffallo_meat p {
+    color: #fff;
+    text-align: center;
+}
+
+.beef_benefit_card {
+    border: 2px solid #fff;
+    padding: 5%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.beef_benefit_card h5 {
+    color: #fff;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.beef_benefit_card p {
+    color: #fff;
+    text-align: justify;
+    font-weight: 100 !important;
+}
+
+@media (max-width: 768px) {
+    .benefits_of_baffallo_meat {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+
+
+.team {
+    width: 100%;
+    height: max-content;
+    background-image: url(img/team_bg.png);
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    overflow: hidden;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.team h3 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.team_listing {
+
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.team_card {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.team_card img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.name_tag {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    line-height: 50%;
+    text-align: center;
+    background-color: #449E48;
+    color: #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.contact_form {
+    background-image: url(img/form_bg.png);
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    overflow: hidden;
+    width: 100%;
+    height: max-content;
+    color: #fff;
+    text-align: center;
+}
+
+.contact_form h3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form_input_container {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.contact_form form {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.contact_form img {
+    width: 100%;
+}
+
+.contact_form_col input {
+    width: 100%;
+    background-color: #00000000;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact_form_col textarea {
+    width: 100%;
+    background-color: #00000000;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .contact_form form {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: max-content;
+    background-color: #000;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+footer img {
+    width: 100%;
+}
+
+.footer_items {
+    width: 100%;
+    height: max-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer_items_col img {
+    width: 80%;
+}
+
+.footer_items_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px !important;
+}
+
+
+.footer_items_col h6{
+    text-decoration: underline 4px #BEB996;
+}
+
+.footer_items_col a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_items_col4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px !important;
+}
+
+
+.footer_strip{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.footer_strip a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 0%;
+}
+
+.footer_strip p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer_strip{
+       flex-direction: column;
     }
 }
