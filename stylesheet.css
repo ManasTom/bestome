@@ -22,7 +22,7 @@ h3 {
 
 
 /* animations */
-/* .animate {
+.animate {
     opacity: 0;
     transition: opacity 1s, transform 1s;
 }
@@ -46,7 +46,7 @@ h3 {
 .animate.fade-in {
     opacity: 1;
     transform: translate(0, 0);
-} */
+}
 
 /* animations */
 
@@ -404,7 +404,7 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-image: url(img/abou_bg.png);
+    background-image: url(img/abou_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
@@ -434,7 +434,7 @@ h3 {
 .home_products {
     width: 100%;
     height: max-content;
-    background-image: url(img/product_bg.png);
+    background-image: url(img/product_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
@@ -510,6 +510,47 @@ h3 {
         padding-right: 2%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+.category_selection {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.category_button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #449E48;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category_button.active,
+.category_button:hover {
+    background-color: #fff;
+    color: #449E48;
+}
+
+@media (max-width: 768px) {
+    .category_selection {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
 
 
 
@@ -626,7 +667,7 @@ h3 {
 .benefits_of_baffallo_meat {
     width: 100%;
     height: max-content;
-    background-image: url(img/product_bg.png);
+    background-image: url(img/product_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
@@ -701,7 +742,7 @@ h3 {
 .team {
     width: 100%;
     height: max-content;
-    background-image: url(img/team_bg.png);
+    background-image: url(img/team_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
@@ -769,7 +810,7 @@ h3 {
 
 
 .contact_form {
-    background-image: url(img/form_bg.png);
+    background-image: url(img/form_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
@@ -869,7 +910,7 @@ footer img {
 }
 
 
-.footer_items_col h6{
+.footer_items_col h6 {
     text-decoration: underline 4px #BEB996;
 }
 
@@ -886,7 +927,7 @@ footer img {
 }
 
 
-.footer_strip{
+.footer_strip {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     display: flex;
@@ -895,19 +936,181 @@ footer img {
     color: #fff;
 }
 
-.footer_strip a{
+.footer_strip a {
     color: #fff;
     text-decoration: none;
     line-height: 0%;
 }
 
-.footer_strip p{
+.footer_strip p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    .footer_strip{
-       flex-direction: column;
+    .footer_strip {
+        flex-direction: column;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub_hero_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    color: #fff;
+    background-image: url(img/beef_banner.webp);
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    overflow: hidden;
+}
+
+.hero_sub {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    position: relative;
+}
+
+.breadcrumbs{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.breadcrumbs p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    .breadcrumbs p{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+.sub_hero_title {
+    padding-top: 35%;
+}
+}
+
+@media (max-width: 250px) {
+    .breadcrumbs{
+        flex-direction: column;
+    }
+}
+
+
+.contact_section {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    gap: 2rem;
+}
+
+.contact_details {
+    flex: 1;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact_item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.contact_item p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+}
+
+.contact_item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.map_container {
+    flex: 1;
+    max-width: 600px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .contact_section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .map_container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+
+    /* border: 1px solid red; */
 }
