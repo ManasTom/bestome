@@ -143,6 +143,7 @@ h3 {
 .header_col2 a {
     color: #000;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .header_col3 {
@@ -288,6 +289,144 @@ h3 {
 }
 
 
+.BuyNowButton_1 {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background-color: #F30301;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.BuyNowButton_1:hover {
+    transform: scale(1.05);
+    border-color: #f3010144;
+    color: #F30301;
+    background-color: #fff;
+}
+
+.BuyNowButton_1:hover .icon {
+    transform: translate(4px);
+}
+
+.BuyNowButton_1:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.BuyNowButton_1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+
+
+
+
+
+.BuyNowButton_2 {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background-color: #f3010100;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F30301;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #F30301;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.BuyNowButton_2:hover {
+    transform: scale(1.05);
+    border-color: #f3010144;
+    color: #fff;
+    background-color: #F30301;
+}
+
+.BuyNowButton_2:hover .icon {
+    transform: translate(4px);
+}
+
+.BuyNowButton_2:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.BuyNowButton_2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+
+
+
+
+
 .hero_actions a {
     color: #fff;
     margin-left: 20px;
@@ -389,12 +528,22 @@ h3 {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 0%;
+    /* overflow: hidden; */
+
 }
 
 
 .home_offers img {
     width: 100%;
     margin-bottom: 1rem;
+    transition: transform 0.8s ease;
+    overflow: hidden;
+    box-shadow: #000000b8 6px 6px 20px 0px;
+    border-radius: 10px;
+}
+
+.home_offers img:hover {
+    transform: scale(1.05);
 }
 
 .home_about {
@@ -417,6 +566,8 @@ h3 {
 .home_about img {
     width: 100%;
     margin-bottom: 1rem;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.507));
+    /* Shape-following shadow */
 }
 
 .home_about p {
@@ -454,6 +605,11 @@ h3 {
 
 .home_products img {
     width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.home_products img:hover {
+    transform: scale(1.07);
 }
 
 .home_product_listing {
@@ -462,6 +618,7 @@ h3 {
     display: flex;
     justify-content: center;
     justify-content: center;
+
 }
 
 .product_card {
@@ -471,6 +628,7 @@ h3 {
     border: 2px solid #fff;
     padding: 5px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .product_card_description {
@@ -644,10 +802,12 @@ h3 {
     padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: 700;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.507));
 }
 
 .top_selling_product_listing_col img {
     width: 100%;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.788));
 }
 
 @media (min-width: 768px) {
@@ -715,6 +875,7 @@ h3 {
     padding: 5%;
     border-radius: 20px;
     margin-bottom: 10px;
+    transition: 0.8s ease;
 }
 
 .beef_benefit_card h5 {
@@ -726,7 +887,20 @@ h3 {
 .beef_benefit_card p {
     color: #fff;
     text-align: justify;
-    font-weight: 100 !important;
+    font-weight: 400 !important;
+}
+
+.beef_benefit_card:hover {
+    background-color: #fff;
+}
+
+.beef_benefit_card:hover.beef_benefit_card h5 {
+    color: #000000;
+}
+
+.beef_benefit_card:hover.beef_benefit_card p {
+    color: #000000;
+    font-weight: 400 !important;
 }
 
 @media (max-width: 768px) {
@@ -792,6 +966,21 @@ h3 {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+
+.name_tag p {
+    transition: 0.4s ease;
+}
+
+@media (min-width: 768px) {
+    .name_tag p {
+        scale: 0;
+    }
+
+    .team_card:hover .name_tag p {
+        scale: 1;
+    }
+}
+
 
 @media (max-width: 768px) {
     .team {
@@ -997,7 +1186,7 @@ footer img {
     position: relative;
 }
 
-.breadcrumbs{
+.breadcrumbs {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -1007,26 +1196,26 @@ footer img {
     justify-content: space-around;
 }
 
-.breadcrumbs p{
+.breadcrumbs p {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0;
 }
 
-@media (max-width: 768px){
-    .breadcrumbs p{
+@media (max-width: 768px) {
+    .breadcrumbs p {
         font-size: 50%;
     }
 }
 
 @media (max-width: 450px) {
-.sub_hero_title {
-    padding-top: 35%;
-}
+    .sub_hero_title {
+        padding-top: 35%;
+    }
 }
 
 @media (max-width: 250px) {
-    .breadcrumbs{
+    .breadcrumbs {
         flex-direction: column;
     }
 }
@@ -1065,7 +1254,7 @@ footer img {
     color: #000;
 }
 
-.contact_item a{
+.contact_item a {
     text-decoration: none;
     color: #000;
 }
@@ -1092,21 +1281,3 @@ iframe {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
