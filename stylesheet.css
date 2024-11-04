@@ -265,6 +265,7 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 300%;
+    text-shadow: 6px 6px 3px #000;
 }
 
 .hero_content p {
@@ -343,7 +344,7 @@ h3 {
 
 @media (max-width: 576px){
     .BuyNowButton_1 {
-        margin-bottom: 2.5rem !important;
+        margin-bottom: 2rem !important;
     }
 }
 
