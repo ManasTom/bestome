@@ -166,11 +166,12 @@ h3 {
 .mobile_menu a {
     text-decoration: none;
     color: #000000;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .mobile_menu li {
     list-style-type: none;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -261,8 +262,8 @@ h3 {
 
 .hero_content h2 {
     color: #fff;
-    font-family: "Ribeye Marrow", serif;
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
     font-size: 300%;
 }
 
@@ -290,6 +291,7 @@ h3 {
 
 
 .BuyNowButton_1 {
+    margin-top: 3rem;
     position: relative;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -337,6 +339,12 @@ h3 {
     top: 0;
     left: -100px;
     opacity: 0.6;
+}
+
+@media (max-width: 576px){
+    .BuyNowButton_1 {
+        margin-bottom: 2.5rem !important;
+    }
 }
 
 @keyframes shine {
@@ -430,12 +438,15 @@ h3 {
 .hero_actions a {
     color: #fff;
     margin-left: 20px;
+    font-size: 170%;
+    text-shadow: 5px 5px 3px #000000;
 }
 
 @media (min-width: 768px) {
     .hero_actions a {
         display: none;
     }
+
 }
 
 @media (max-width: 1250px) {
@@ -454,6 +465,10 @@ h3 {
         padding-bottom: 20%;
         padding-left: 20%;
         padding-right: 20%;
+    }
+
+    .hero_actions button {
+        margin-bottom: 10px;
     }
 }
 
@@ -505,6 +520,7 @@ h3 {
 }
 
 
+
 @media (max-width: 320px) {
     .hero img {
         width: 250%;
@@ -533,6 +549,11 @@ h3 {
 }
 
 
+.home_offers_col {
+    width: 100%;
+    position: relative;
+}
+
 .home_offers img {
     width: 100%;
     margin-bottom: 1rem;
@@ -544,6 +565,18 @@ h3 {
 
 .home_offers img:hover {
     transform: scale(1.05);
+}
+
+.home_offers p {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.home_offers a {
+    color: #fff;
 }
 
 .home_about {
@@ -578,7 +611,194 @@ h3 {
     .home_about p {
         padding-right: 12rem;
     }
+
+    .home_offers p {
+        width: 80%;
+        color: #fff;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
 }
+
+@media (max-width: 600px) {
+
+    .home_offers p {
+        width: 85%;
+        color: #fff;
+        font-size: 80%;
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .home_offers {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .home_offers p {
+        width: 80%;
+        color: #fff;
+        font-size: 80%;
+        line-height: 110%;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .home_offers p {
+        width: 80%;
+        color: #fff;
+        font-size: 70%;
+        line-height: 110%;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+}
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.mySlides p {
+    width: 85%;
+    color: #fff;
+    font-size: 80%;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.mySlides a {
+    color: #fff;
+}
+
+@media (max-width: 380px) {
+
+    .mySlides p {
+        width: 80%;
+        color: #fff;
+        font-size: 80%;
+        line-height: 110%;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .mySlides p {
+        width: 80%;
+        color: #fff;
+        font-size: 70%;
+        line-height: 110%;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (min-width: 577px) {
+
+    .home_offers_sm {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -686,6 +906,7 @@ h3 {
 }
 
 .category_button {
+
     padding: 0.5rem 1rem;
     border: 2px solid #fff;
     border-radius: 20px;
@@ -705,6 +926,11 @@ h3 {
     .category_selection {
         flex-direction: column;
         gap: 0.5rem;
+        align-items: center;
+    }
+
+    .category_button {
+        width: 80%;
     }
 }
 
@@ -1139,6 +1365,23 @@ footer img {
 @media (max-width: 768px) {
     .footer_strip {
         flex-direction: column;
+    }
+
+    .footer_items {
+        width: 100%;
+        height: max-content;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer_items_col4 {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
 
