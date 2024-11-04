@@ -346,6 +346,13 @@ h3 {
     .BuyNowButton_1 {
         margin-bottom: 1rem !important;
     }
+    .hero_content h2 {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-size: 300%;
+        text-shadow: 3px 3px 3px #000;
+    }
 }
 
 @keyframes shine {
