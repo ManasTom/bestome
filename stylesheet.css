@@ -263,9 +263,9 @@ h3 {
 .hero_content h2 {
     color: #fff;
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 200 !important;
     font-size: 300%;
-    text-shadow: 6px 6px 3px #000;
+    text-shadow: 0px 0px 6px #000;
 }
 
 .hero_content p {
