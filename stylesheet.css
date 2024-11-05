@@ -864,6 +864,10 @@ h3 {
     background-color: #fff;
     border-radius: 1rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .product_card_description p {
