@@ -58,9 +58,9 @@
                 <li class="mobile_item"><a href="products.html">Products</a></li>
                 <li class="mobile_item"><a href="contact.html">Contact Us</a></li>
                 <br><br>
-                <li class="mobile_item"><a href="mailto:bestome@gmail.com">bestome@gmail.com</a></li>
-                <li class="mobile_item"><a href="tel:+918590925972">+918590925972</a></li>
-                <li class="mobile_item"><a href="">EDAKKARA, MALAPPURAM</a></li>
+                <li class="mobile_item"><a href="mailto:bestome@gmail.com"><i class="fa-regular fa-envelope"></i> &nbsp;bestome@gmail.com</a></li>
+                <li class="mobile_item"><a href="tel:+918590925972"><i class="fa-solid fa-phone"></i> &nbsp;+918590925972</a></li>
+                <li class="mobile_item"><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;EDAKKARA, MALAPPURAM</a></li>
             </ul>
         </div>
     </header>
@@ -612,6 +612,15 @@
 
     </footer>
 
+    <div class="floating_btn_call">
+        <a target="_blank" href="tel:+918590925972" style="text-decoration: none;">
+            <div class="contact_icon_call">
+                <i class="fa-solid fa-phone"></i>
+                        </div>
+        </a>
+        <p class="text_icon_call">Talk to us?</p>
+    </div>
+
     <div class="floating_btn">
         <a target="_blank" href="https://wa.me/+918590925972" style="text-decoration: none;">
             <div class="contact_icon">
@@ -620,63 +629,7 @@
         </a>
         <p class="text_icon">Talk to us?</p>
     </div>
-    <style>
-        /* whatsapp */
-
-
-        .floating_btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 100px;
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 99999;
-        }
-
-        @keyframes pulsing {
-            to {
-                box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
-            }
-        }
-
-        .contact_icon {
-            background-color: #42db87;
-            color: #fff;
-            width: 60px;
-            height: 60px;
-            font-size: 30px;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 2px 2px 3px #999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: translatey(0px);
-            animation: pulse 1.5s infinite;
-            box-shadow: 0 0 0 0 #42db87;
-            -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-            font-weight: normal;
-            font-family: sans-serif;
-            text-decoration: none !important;
-            transition: all 300ms ease-in-out;
-        }
-
-
-        .text_icon {
-            margin-top: 8px;
-            color: #000000;
-            font-size: 13px;
-        }
-    </style>
-
-
+    
     <script src="js/hamburgerToggle.js"></script>
     <script src="js/productCategories.js"></script>
     <script src="js/animate.js"></script>
